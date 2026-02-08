@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E63B3FB2D7AA40F58090F736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C52732D934465B4D91D5A /* AppDelegate.swift */; };
+		30C78216335E497B8288D996 /* BlackoutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEF92AD34A409DA2D24094 /* BlackoutWindow.swift */; };
+		B3752869D5284EF88BE1D508 /* BlackoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21195BC4340A4F5EBD95CDE2 /* BlackoutView.swift */; };
+		7FF6F6C46E844528A7422146 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDC9375D843188771FA61 /* main.swift */; };
+		7CA1F5417FE94A50ABEC2A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92228F98C19546B9A0193D6D /* Assets.xcassets */; };
+		BAA7941155874E3583A939F3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45D41770D9D4E0FBAC753A8 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E4C52732D934465B4D91D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94AEF92AD34A409DA2D24094 /* BlackoutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackoutWindow.swift; sourceTree = "<group>"; };
+		21195BC4340A4F5EBD95CDE2 /* BlackoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackoutView.swift; sourceTree = "<group>"; };
+		647BDC9375D843188771FA61 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		92228F98C19546B9A0193D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E27C6CBE12649E2A58366CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45D41770D9D4E0FBAC753A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D516E8B643A3473D851A4D98 /* OLEDBlackout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = OLEDBlackout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48E9EEC6F6984F7E87609954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA7941155874E3583A939F3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98141F5779724B4EAA0AD126 = {
+			isa = PBXGroup;
+			children = (
+				EE04AA7ED56A40FDB3CB5875 /* OLEDBlackout */,
+				ABB0A06D30CE4C33B311E3B0 /* Frameworks */,
+				75E77D8195054434B50AB39C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE04AA7ED56A40FDB3CB5875 /* OLEDBlackout */ = {
+			isa = PBXGroup;
+			children = (
+				92228F98C19546B9A0193D6D /* Assets.xcassets */,
+				647BDC9375D843188771FA61 /* main.swift */,
+				1E4C52732D934465B4D91D5A /* AppDelegate.swift */,
+				94AEF92AD34A409DA2D24094 /* BlackoutWindow.swift */,
+				21195BC4340A4F5EBD95CDE2 /* BlackoutView.swift */,
+				5E27C6CBE12649E2A58366CB /* Info.plist */,
+			);
+			path = OLEDBlackout;
+			sourceTree = "<group>";
+		};
+		ABB0A06D30CE4C33B311E3B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D45D41770D9D4E0FBAC753A8 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75E77D8195054434B50AB39C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D516E8B643A3473D851A4D98 /* OLEDBlackout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D298063683094521B1A70976 /* OLEDBlackout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48BCE09C0F8049A89B2E698A /* Build configuration list for PBXNativeTarget "OLEDBlackout" */;
+			buildPhases = (
+				93A8E45CD6A047F8A5D4936A /* Sources */,
+				A76DEBCD70B3440BA32816DB /* Resources */,
+				48E9EEC6F6984F7E87609954 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OLEDBlackout;
+			productName = OLEDBlackout;
+			productReference = D516E8B643A3473D851A4D98 /* OLEDBlackout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F512BD4C5C324854AB65F18F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 24608F1FF81E4DB4BE7FDE92 /* Build configuration list for PBXProject "OLEDBlackout" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98141F5779724B4EAA0AD126;
+			productRefGroup = 75E77D8195054434B50AB39C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D298063683094521B1A70976 /* OLEDBlackout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76DEBCD70B3440BA32816DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA1F5417FE94A50ABEC2A88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93A8E45CD6A047F8A5D4936A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF6F6C46E844528A7422146 /* main.swift in Sources */,
+				E63B3FB2D7AA40F58090F736 /* AppDelegate.swift in Sources */,
+				30C78216335E497B8288D996 /* BlackoutWindow.swift in Sources */,
+				B3752869D5284EF88BE1D508 /* BlackoutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50A4320F214143428E03CDED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+			};
+			name = Debug;
+		};
+		BF926F6A6C5C4561B27C5E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+			};
+			name = Release;
+		};
+		02E6BD51887E4D42B68BF746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				INFOPLIST_FILE = OLEDBlackout/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.oledblackout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5EC7259B34F345E3B6AE97C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				INFOPLIST_FILE = OLEDBlackout/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.oledblackout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24608F1FF81E4DB4BE7FDE92 /* Build configuration list for PBXProject "OLEDBlackout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A4320F214143428E03CDED /* Debug */,
+				BF926F6A6C5C4561B27C5E35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48BCE09C0F8049A89B2E698A /* Build configuration list for PBXNativeTarget "OLEDBlackout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E6BD51887E4D42B68BF746 /* Debug */,
+				5EC7259B34F345E3B6AE97C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F512BD4C5C324854AB65F18F /* Project object */;
+}
