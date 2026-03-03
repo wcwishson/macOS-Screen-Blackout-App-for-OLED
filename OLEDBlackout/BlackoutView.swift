@@ -1,6 +1,12 @@
 import Cocoa
 
 final class BlackoutView: NSView {
+    private let transparentCursor: NSCursor = {
+        let image = NSImage(size: NSSize(width: 16, height: 16))
+        return NSCursor(image: image, hotSpot: .zero)
+    }()
+    private var cursorTrackingArea: NSTrackingArea?
+
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         wantsLayer = true
@@ -13,6 +19,31 @@ final class BlackoutView: NSView {
     }
 
     override var acceptsFirstResponder: Bool { true }
+
+    override func updateTrackingAreas() {
+        if let cursorTrackingArea {
+            removeTrackingArea(cursorTrackingArea)
+        }
+
+        let options: NSTrackingArea.Options = [.activeAlways, .inVisibleRect, .cursorUpdate, .mouseMoved]
+        let trackingArea = NSTrackingArea(rect: bounds, options: options, owner: self, userInfo: nil)
+        addTrackingArea(trackingArea)
+        cursorTrackingArea = trackingArea
+        super.updateTrackingAreas()
+    }
+
+    override func resetCursorRects() {
+        discardCursorRects()
+        addCursorRect(bounds, cursor: transparentCursor)
+    }
+
+    override func cursorUpdate(with event: NSEvent) {
+        transparentCursor.set()
+    }
+
+    override func mouseMoved(with event: NSEvent) {
+        transparentCursor.set()
+    }
 
     override func mouseDown(with event: NSEvent) {
         quit()

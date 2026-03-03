@@ -1,7 +1,7 @@
 import Cocoa
 
 final class BlackoutWindow: NSWindow {
-    init(screen: NSScreen) {
+    init(screen: NSScreen, level: NSWindow.Level) {
         super.init(
             contentRect: screen.frame,
             styleMask: [.borderless],
@@ -15,9 +15,12 @@ final class BlackoutWindow: NSWindow {
         backgroundColor = .black
         hasShadow = false
         ignoresMouseEvents = false
+        acceptsMouseMovedEvents = true
         isMovableByWindowBackground = false
-        level = .screenSaver
+        self.level = level
         collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary, .ignoresCycle]
+        hidesOnDeactivate = false
+        animationBehavior = .none
 
         titleVisibility = .hidden
         titlebarAppearsTransparent = true

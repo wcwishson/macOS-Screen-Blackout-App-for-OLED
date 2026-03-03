@@ -1,64 +1,41 @@
-# macOS Screen Blackout App for OLED
+# OLED Blackout for macOS
 
-`OLEDBlackout` is a minimal macOS utility that shows pure black fullscreen windows on all displays to reduce OLED wear when you are away.
+`OLED Blackout` turns all your displays fully black in one click, while keeping your Mac running in the background.
 
-## Features
+## Why People Use It
 
-- Pure black fullscreen overlay on all connected displays
-- High window level (`screenSaver`) to stay above normal app windows
-- Hides cursor while active
-- Hides Dock and menu bar while active
-- Reasserts topmost/cursor-hide state every 5 seconds
-- Quits on any mouse click (left, right, or other)
-- Ignores keyboard input while active
+- Reduce OLED wear when stepping away for short periods
+- Keep your desktop private in shared spaces
+- Hide visual distractions instantly without putting the Mac to sleep
 
 ## Download
 
-Get the latest prebuilt app from Releases:
+Get the latest app build from the GitHub Releases page:
 
-- [v1.0.0 Release](https://github.com/wcwishson/macOS-Screen-Blackout-App-for-OLED/releases/tag/v1.0.0)
-- Asset: `OLEDBlackout-v1.0.0-macOS-arm64.zip`
+- [Download Latest Release](https://github.com/wcwishson/macOS-Screen-Blackout-App-for-OLED/releases/latest)
 
 ## Install
 
-1. Download and unzip the release zip.
-2. Move `OLEDBlackout.app` to `/Applications`.
-3. Launch once via right-click -> `Open` (required for unsigned apps).
-4. Optionally pin it to Dock.
+1. Download the latest `.zip` from Releases.
+2. Unzip it.
+3. Move `OLEDBlackout.app` to `/Applications`.
+4. Launch once with right-click -> `Open` (needed for unsigned apps).
 
-## Usage
+## How To Use
 
-1. Launch `OLEDBlackout`.
-2. All screens turn black and cursor is hidden.
-3. Click once anywhere to quit.
+1. Open `OLED Blackout`.
+2. All connected screens go black and the cursor is hidden.
+3. Click once anywhere to exit and return to normal.
 
-## Build From Source
+## Behavior
 
-Requirements:
+- Covers all connected displays
+- Hides Dock and menu bar while active
+- Stays above normal app windows
+- Exits immediately on mouse click
 
-- Xcode 15+
-- macOS 12+
-- Apple Silicon target in current release package
+## Notes
 
-Build:
+- This app is currently unsigned/not notarized.
+- Some system-level macOS dialogs can still appear above any third-party app.
 
-```bash
-xcodebuild -project "OLEDBlackout.xcodeproj" -scheme OLEDBlackout -configuration Release -destination 'platform=macOS' build
-```
-
-The built app is placed in Xcode `DerivedData`.
-
-## Notes and Limits
-
-- The app is currently unsigned and not notarized.
-- System-level dialogs (for example security prompts) may still appear above any third-party app by macOS design.
-- If Dock icon or behavior looks stale after updating, replace the app in `/Applications` and re-add it to Dock.
-
-## Project Structure
-
-- `OLEDBlackout/` - Swift source and asset catalog
-- `OLEDBlackout.xcodeproj/` - Xcode project
-
-## License
-
-No license file is included yet. Add a `LICENSE` file if you want explicit reuse terms.
